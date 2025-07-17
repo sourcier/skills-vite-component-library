@@ -1,14 +1,4 @@
 {
-  "name": "skills-component-library",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc --p ./tsconfig.lib.json && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
   "dependencies": {
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
@@ -31,5 +21,20 @@
     "vite": "^7.0.4",
     "vite-plugin-dts": "^4.5.4",
     "vite-plugin-lib-inject-css": "^2.2.2"
-  }
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/main.js",
+  "name": "skills-component-library",
+  "private": true,
+  "scripts": {
+    "build": "tsc --p ./tsconfig.lib.json && vite build",
+    "dev": "vite",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "type": "module",
+  "types": "dist/main.d.ts",
+  "version": "0.0.0"
 }
