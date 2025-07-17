@@ -34,6 +34,7 @@
     "build": "tsc --p ./tsconfig.lib.json && vite build",
     "dev": "vite",
     "lint": "eslint .",
+    "prepublishOnly": "npm run build",
     "preview": "vite preview"
   },
   "sideEffects": [
