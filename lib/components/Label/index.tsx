@@ -1,3 +1,6 @@
+import styles from "./styles.module.css";
+
 export function Label(props: React.LabelHTMLAttributes<HTMLLabelElement>) {
-  return <label {...props} />;
+  const { className, ...restProps } = props;
+  return <label className={`${className} ${styles.button}`} {...restProps} />;
 }
