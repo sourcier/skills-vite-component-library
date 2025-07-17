@@ -36,6 +36,9 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "sideEffects": [
+    "**/*.css"
+  ],
   "type": "module",
   "types": "dist/main.d.ts",
   "version": "0.0.0"
